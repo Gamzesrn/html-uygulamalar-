@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox uygulamam </title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .header{
+        padding: 30px;
+        text-align: center;
+        background-color: blueviolet;
+        color: white;
+    }
+    .navbar{
+        background-color: black;
+        display: flex;
+    }
+    .navbar a{
+        color: white;
+        padding: 16px 20px;
+        text-decoration: none;
+        text-align: center;
+
+    }
+    .navbar a:hover{
+        background-color: antiquewhite;
+        color: black;
+    }
+    #main{
+        display: flex;
+    }
+    #sidebar{
+        background-color: brown;
+        flex:25%;
+        padding: 20px;
+    }
+    #content{
+        flex:75%;
+        padding: 20px;
+    }
+</style>
+<body>
+    <div class="header">
+        <h1>Gamze şirin</h1>
+        <p>Lorem ipsum dolor sit amet cons.</p>
+    </div>
+        <div class="navbar">
+            <a href="#">link1</a>
+            <a href="#">link2</a>
+            <a href="#">link3</a>
+            <a href="#">link4</a>
+        </div>
+    </div>    
+        <div id="main">
+
+            <div id="sidebar"></div>
+                <div class="box">
+                    <h2>lorem impuls</h2>
+                    <div class="ph" style="height: 200px;">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sapiente laborum consequatur blanditiis natus.</p>
+                </div>
+                </div>
+            
+            <div id="content">
+                    <div class="box">
+                        <h2>lorem impuls</h2>
+                        <div class="ph" style="height: 50px;">
+                        <div class="ph" style="height: 50px;">
+                        <div class="ph" style="height: 50px;"></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sapiente laborum consequatur blanditiis natus.</p>
+                    </div>
+                    </div>
+        </div>
+
+    
+</body>
+</html>
