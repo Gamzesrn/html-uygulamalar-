@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form action="/home/register">
+        <p>
+            AD <input name="ad" required>
+        </p>
+
+
+        <p>
+            SOYAD <input name="soyad"  required>
+        </p>
+
+        <p>
+            E-POSTA <input type="email" name="eposta" required>
+        </p>
+
+        <p>
+            ŞİFRE <input type="password" name="şifre" required>
+        </p>
+
+        <p>
+            BENİ HATIRLA <input type="checkbox" name="beni hatırla">
+        </p>
+
+        <p>
+            KADIN<input type="radio" name ="cinsiyet">
+            ERKEK<input type="radio" name="cinsiyet">
+        </p>
+        
+
+        <p>
+            HOBİLERİNİZ
+            <br>
+            <br>
+            Sinema<input type="checkbox" name="hobi">
+            Spor<input type="checkbox"name="hobi">
+            Müzik<input type="checkbox"name="hobi">
+            Resim<input type="checkbox"name="hobi">
+
+        </p>
+     
+        <p>
+          <select name="şehir">
+
+            <option>kocaeli</option>
+            <option>izmir</option>
+            <option>bursa</option>
+
+          </select>
+
+
+        </p>
+
+
+        <p>
+            <select multiple name="şehir">
+  
+              <option>kocaeli</option>
+              <option>izmir</option>
+              <option>bursa</option>
+  
+            </select>
+  
+  
+          </p>
+
+
+    <input type="submit" value="kaydet">
+    <input type="reset">
+
+    </form>
+
+
+
+
+</body>
+</html>
