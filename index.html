@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow</title>
+</head>
+<style>
+    body{
+        background-color: #f2f2f2;
+    }
+    .card{
+        width: 200px;
+        height: 200px;
+        background-color: #fff;
+        border-radius: 2px;
+        margin: 20px;
+        display: inline-block;
+    }
+    .c1{
+        -webkit-box-shadow: 10px 10px;
+        -moz-box-shadow: 10px 10px;
+        box-shadow: 10px 10px;
+    }
+    .c2{
+        -webkit-box-shadow: 10px 20px;
+        -moz-box-shadow: 10px 20px;
+        box-shadow: 10px 20px 20px;
+    }
+    .c3{
+        -webkit-box-shadow: 10px 10px 10px 10px rgba(0,0,0,.4);
+        -moz-box-shadow: 10px 10px 10px 10px rgba(0,0,0,.4);
+        box-shadow: 10px 10px 10px 10px rgba(0,0,0,.4);
+    }
+    
+    .c4:hover{
+        -webkit-box-shadow: 10px 10px 10px ;
+        -moz-box-shadow: 10px 10px 10px;
+        box-shadow: 10px 10px 10px;
+    }
+    .c5{
+        -webkit-box-shadow: 10px 20px ;
+        -moz-box-shadow: 10px 20px ;
+        box-shadow: 10px 20px 10px red;
+        border :1px solid gray;
+    }
+    .c6{
+        -webkit-box-shadow:  0 3px 6px ;
+        -moz-box-shadow:  0 3px 6px ;
+        box-shadow: 0 3px 6px rgba(0,0,0,.18) ,0 0 3px 6px rgba(0,0,0,.18);
+    }
+</style>
+<body>
+    <div class="card c1"></div>
+    <div class="card c2"></div>
+    <div class="card c3"></div>
+    <div class="card c4"></div>
+    <div class="card c5"></div>
+    <div class="card c6"></div>
+
+
+</body>
+</html>
