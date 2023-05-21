@@ -1,2 +1,2 @@
-# html-css-uygulamalar-
-burada htmle giriş niteliğindeki temel uygulamaları görebilirsiniz ayrıca css için de örnekler bulunmaktadır
+# html-css-uygulamalar
+burada html uygulamaları görebilirsiniz ayrıca css örnekleri de bulunmaktadır
