@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>bootstrap example page</title>
+<style>
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
+</head>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>   
+
+<body>
+    <form class="p-3 m-3">
+        <div class="form-group">
+            <label for="name">name</label>
+            <input type="text" id="name"class="form-control" placeholder="enter name">
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="email">email</label>
+            <input type="text" id="email" class="form-control" placeholder="enter email">
+            <small class="form-text text-muted">please enter a correct email</small>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="password">password</label>
+            <input type="password" id="password" class="form-control" placeholder="enter password">
+            <small class="form-text text-muted">please enter a correct password</small>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="city">city</label>
+            <select name="text" id="city"class="form-control" >
+                <option value="kocaeli">kocaeli</option>
+                <option value="kars">kars</option>
+                <option value="izmir">izmir</option>
+                <option value="niğde">niğde</option>
+            </select>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="message">message</label>
+            <textarea name="message"id="message"rows="5"></textarea>
+        </div>
+        <br>
+        <div class="form-group">
+            <legeng>hobies</legeng>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="hobies" value="basketball">
+                <label class="form-check-label" for="hobies">basketball</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="hobies" value="football">
+                <label class="form-check-label" for="hobies">football</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="hobies" value="handball">
+                <label class="form-check-label" for="hobies">handball</label>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

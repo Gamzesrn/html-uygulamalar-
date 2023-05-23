@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox responsive mix page example</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header {
+            padding:30px;
+            text-align: center;
+            background-color: indianred;
+            color: #fff;
+        }
+        .navbar ul{
+            display: flex;
+            background-color: rgb(107, 127, 127);
+            padding: 15px;
+        }
+        .navbar a{
+            padding: 16px 20px;
+            text-align: center;
+            text-decoration: none;
+            color:#fff;
+        }
+        .navbar a:hover{
+            background-color: #fff;
+            color: indianred;
+        }
+        .navbar li{
+            list-style: none;
+        }
+        #main{
+            display: flex;
+        }
+        .sidebar{
+            background-color: #f1f1f1;
+            flex:25%
+            order=1;
+        }
+        .box{
+            margin-bottom: 20px;
+        }
+        p{
+            margin: 10px 0;
+        }
+        .content{
+            padding: 20px;
+            flex:75%;
+
+        }
+        .ph{
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px; 
+            margin-top:10px ;
+        }
+        @media screen and (max-width:800px){
+            .navbar ul,#main{
+            flex-direction: column;
+            }
+            .navbar ul{
+                text-align: center;
+            }
+        }
+        @media screen and (max-width:600px){
+            .sidebar{
+            order:-1;
+            }
+
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Lorem, ipsum.</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Link 4</a></li>
+        </ul>
+    </div>
+    <div id="main">
+        <div class="sidebar">
+            <div class="box">
+                <h2>Lorem, ipsum.</h2>
+                <div class="ph" style="height: 200px;"></div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident laboriosam illum quod veniam
+                    dolorem fugit.</p>
+            </div>
+            <div class="ph" style="height: 50px;"></div>
+            <div class="ph" style="height: 50px;"></div>
+            <div class="ph" style="height: 50px;"></div>
+
+        </div>
+        <div class="content">
+            <div class="box">
+                <h2>Lorem, ipsum.</h2>
+                <div class="ph" style="height: 200px;"></div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident laboriosam illum quod veniam
+                    dolorem fugit.</p>
+            </div>
+            <div class="box">
+                <h2>Lorem, ipsum.</h2>
+                <div class="ph" style="height: 200px;"></div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident laboriosam illum quod veniam
+                    dolorem fugit.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

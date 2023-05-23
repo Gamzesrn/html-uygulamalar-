@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive navbar example page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .navigation{
+            background-color: #38da81;
+            padding: 5px;
+            text-align: center;
+            display:flex;
+            justify-content: flex-end;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        .navigation a{
+            text-decoration: none;
+            display: inline-block;
+            padding: 16px;
+            color: aliceblue;
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.3);
+            border-bottom: 1px solid rgba(255,255,255,0.3);
+        }
+        .navigation a:hover{
+            color: #0f3e33;
+        }
+        .navigation li:hover{
+            background-color: #94f8c1;
+        }
+        @media all and (max-width:800px){
+          .navigation{
+            justify-content: space-around;
+            }
+        }
+        @media all and (max-width:600px){
+          .navigation{
+            flex-direction: column;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <ul class="navigation">
+        <li><a href="">home</a></li>
+        <li><a href="">about me</a></li>
+        <li><a href="">contact</a></li>
+        <li><a href="">products</a></li>
+        
+    </ul>
+</body>
+</html>
