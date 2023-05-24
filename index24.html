@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>collapse and acordion</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body class="w-75 mx-auto my-4">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <p>
+        <button type="button" class="btn btn-primary " data-toggle="collapse" data-target="#content">
+            buton
+        </button>
+        <a href="#content" class="btn btn-danger" data-toggle="collapse">link</a>
+        <a href="#content" class="btn btn-success" data-toggle="collapse">link</a>
+
+    </p>
+    <div id="content" class="collapse show">
+        <h2>
+            Lorem ipsum dolor sit amet.
+        </h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quos nihil perspiciatis id corrupti velit,
+            laudantium magnam minima adipisci sit quisquam iste ipsum. Sapiente a aliquid ab eligendi ad accusamus!
+        </p>
+    </div>
+    <br><br>
+    <div id="accordion">
+        <div class="card mb-1">
+            <div class="card-header">
+                <a class="card-link" href="#collapseOne"data-toggle="collapse">item 1</a>
+            </div>
+            <div class="collapse show"id="collapseOne" data-parent="#accordion">
+                <div class="card-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde facilis vitae modi molestias! Aperiam inventore fugiat accusamus quae nostrum accusantium minima ex magnam ab. Ipsa, omnis voluptatem! Facere, asperiores illum!</p>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-1">
+            <div class="card-header">
+                <a class="card-link" href="#collapsetwo"data-toggle="collapse">item 2</a>
+            </div>
+            <div class="collapse"id="collapsetwo" data-parent="#accordion">
+                <div class="card-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde facilis vitae modi molestias! Aperiam inventore fugiat accusamus quae nostrum accusantium minima ex magnam ab. Ipsa, omnis voluptatem! Facere, asperiores illum!</p>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-1">
+            <div class="card-header">
+                <a class="card-link" href="#collapsethree"data-toggle="collapse">item 3</a>
+            </div>
+            <div class="collapse"id="collapsethree" data-parent="#accordion">
+                <div class="card-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde facilis vitae modi molestias! Aperiam inventore fugiat accusamus quae nostrum accusantium minima ex magnam ab. Ipsa, omnis voluptatem! Facere, asperiores illum!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
